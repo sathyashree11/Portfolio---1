@@ -133,12 +133,13 @@
     height: 240px;
     border-radius: 50%;
     overflow: hidden;
+    
 }
 
 .home .img-container img {
     width: 100%;
     height: 100%;
-    object-fit: cover; /* Ensures the image covers the container */
+    border-radius: 50%;/* Ensures the image covers the container */
     display: block;
 }
 
@@ -170,6 +171,23 @@
     display: flex;
     justify-content: center;
     align-items: center;
+}
+
+.home .img-container {
+    position: relative;
+    width: 240px;
+    height: 240px;
+    border-radius: 50%;
+    overflow: hidden;
+    transition: transform 0.3s ease; /* Smooth scale effect on hover */
+}
+
+.home .img-container img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover; /* Ensures the image covers the container */
+    display: block;
+    transition: transform 0.3s ease; /* Smooth scale effect on hover */
 }
 
 /* #### ABOUT PAGE #### */
@@ -232,28 +250,28 @@
     position: absolute;
 }
 .skills .item-text .w-90{
-    margin-left: 85%;
+    margin-left: 45%;
 }
 .skills .item-text .w-75{
-    margin-left: 70%;
+    margin-left: 45%;
 }
 .skills .item-text .w-85{
-    margin-left: 80%;
+    margin-left: 45%;
 }
 .skills .item-text .w-80{
-    margin-left: 75%;
+    margin-left: 45%;
 }
 .skills .item-text .w-60{
-    margin-left: 55%;
+    margin-left: 45%;
 }
 .skills .item-text .w-68{
-    margin-left: 63%;
+    margin-left: 45%;
 }
 .progress{
     margin: 0.8rem 0;
     border-radius: 10px;
     height: 16px;
-    width: 100%;
+    width: 50%;
     background-color: var(--nero);
     overflow: hidden;
 }
@@ -263,17 +281,17 @@
     border-top-right-radius: 2px;
     border-bottom-right-radius: 2px;
 }
-.progress-bar.w-90{
-    width: 90%;
+.progress-bar.w-60{
+    width: 60%;
 }
-.progress-bar.w-75{
-    width: 75%;
+.progress-bar.w-55{
+    width: 55%;
 }
-.progress-bar.w-85{
-    width: 85%;
+.progress-bar.w-45{
+    width: 45%;
 }
-.progress-bar.w-80{
-    width: 80%;
+.progress-bar.w-60{
+    width: 60%;
 }
 .progress-bar.w-60{
     width: 60%;
